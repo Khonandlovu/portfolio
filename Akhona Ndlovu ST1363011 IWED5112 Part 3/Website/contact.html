@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - URBAN COFFEE HUB</title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Enter your name" required>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <button type="submit">Submit</button>
+        </form>
+    <header>
+        <img src="images/Urban hub logo.png" alt="Blissful Bakes Bakery Logo" width="150">
+        <h1>Contact URBAN COFFEE HUB</h1>
+    </header>
+    
+    <nav>
+       <table>
+        <tr>
+            <td><a href="home.html">Home</a></td>
+            <td><a href="about.html">About Us</a></td>
+            <td><a href="products.html">Products</a></td>
+            <td><a href="gallery.html">Gallery</a></td> <!-- New Link -->
+            <td><a href="contact.html">Contact Us</a></td>
+        </tr>
+    </table>
+    </nav>
+
+    <section>
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you! Whether you have a question about our products, need assistance with an order, or just want to share your experience with us, please feel free to reach out.</p>
+    </section>
+
+    <section>
+        <h2>Contact Information</h2>
+        <p>
+            <strong>Phone:</strong>081 123 4567<br>
+            <strong>Email:</strong> <a href="mailto:info@urbancoffeehub.com">info@urbancoffeehub.com</a><br>
+            <strong>Address:</strong> 123 Boro Street, Braamfontein,
+        </p>
+    </section>
+
+    <section>
+        <h2>Send Us a Message</h2>
+        <!-- Google Form Embed -->
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfD1z_Example_Google_Form_Link/viewform?embedded=true"
+            width="640"
+            height="800"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0">
+        </iframe>
+    </section>
+
+    <section>
+        <h2>Visit Us</h2>
+        <p>We welcome you to visit our coffee shop and experience our delicious treats in person. Below is our location:</p>
+        <p><strong>Address:</strong> 123 Boro Street, Braamfontein, 
+        </p>
+        <!-- Google Maps Embed -->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1234567890!2d-122.41941548468215!3d37.77492957975925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c0b3b3b3b%3A0x4a3a3c3a3c3a3a3a!2s123+Bakery+Lane%2C+Sweetville%2C+CA+98765!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Urban Coffee Hub. All rights reserved.</p>
+        <p>Follow us on:</p>
+        <p>
+            <a href="https://www.facebook.com/urbancoffeehub">Facebook</a> |
+            <a href="https://www.instagram.com/urbancoffeehub">Instagram</a> |
+            <a href="https://www.twitter.com/urbancoffeehub">Twitter</a>
+        </p>
+            <script>
+            document.getElementById("myForm").addEventListener("submit", function(e) {
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            
+            if (name === "" || email === "") {
+            alert("All fields are required!");
+            e.preventDefault(); // Stop form submission
+            }
+            });
+            </script>
+    </footer>
+</body>
+</html>
